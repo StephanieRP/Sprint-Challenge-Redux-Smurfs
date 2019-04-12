@@ -26,11 +26,22 @@ export default class SmurfForm extends Component {
     alert("Your New Smurf Has Successfully been added");
   };
 
+  //   edit = e => {
+  //     e.preventDefault();
+  //     this.props.editSmurf(this.props.id, this.state);
+  //     this.setState({
+  //       ...this.state,
+  //       name: "",
+  //       age: "",
+  //       height: ""
+  //     });
+  //   };
+
   render() {
     return (
       <div className="form-wrapper">
-        <form className="smurf-form" onSubmit={this.addNewSmurf}>
-          <p> Add Smurf</p>
+        <form className="smurf-form">
+          <p> Add/Edit Smurf</p>
 
           <input
             type="text"
@@ -53,7 +64,8 @@ export default class SmurfForm extends Component {
             placeholder="Smurf Height"
             onChange={this.handleChange}
           />
-          <button>Submit</button>
+
+          <button onClick={this.addNewSmurf}>Submit</button>
         </form>
       </div>
     );

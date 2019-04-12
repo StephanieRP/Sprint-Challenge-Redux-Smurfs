@@ -85,6 +85,26 @@ const reducer = (state = initialState, action) => {
         deletingSmurf: false,
         error: "Something went wrong"
       };
+    //edit smurf
+    case EDIT_SMURF_START:
+      return {
+        ...state,
+        updatingSmurf: true,
+        error: null
+      };
+    case EDIT_SMURF_SUCCESS:
+      return {
+        ...state,
+        updatingSmurf: false,
+        error: null,
+        smurfs: action.payload
+      };
+    case EDIT_SMURF_FAIL:
+      return {
+        ...state,
+        updatingSmurf: false,
+        error: "Something went wrong"
+      };
 
     default:
       return state;
