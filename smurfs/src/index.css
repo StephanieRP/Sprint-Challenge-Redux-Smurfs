@@ -31,7 +31,7 @@ h1 {
 }
 
 .form-wrapper {
-  background: darkslateblue;
+  /* background: darkslateblue; */
   height: 50vh;
   display: flex;
   justify-content: center;
@@ -42,6 +42,7 @@ h1 {
   box-shadow: 2px -1px 5px 1px cornflowerblue;
   padding: 2rem;
   border-radius: 5px;
+  background: darkslateblue;
 }
 
 .smurf-form p {

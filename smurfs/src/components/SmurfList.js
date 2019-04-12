@@ -9,7 +9,6 @@ const SmurfList = props => {
             key={smurf.id}
             smurfs={smurf}
             deleteSmurf={props.deleteSmurf}
-            deletingSmurf={props.deletingSmurf}
           />
         );
       })}

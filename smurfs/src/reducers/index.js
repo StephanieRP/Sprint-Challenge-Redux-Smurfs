@@ -7,7 +7,10 @@ import {
   ADD_SMURF_FAIL,
   DELETE_SMURF_START,
   DELETE_SMURF_SUCCESS,
-  DELETE_SMURF_FAIL
+  DELETE_SMURF_FAIL,
+  EDIT_SMURF_START,
+  EDIT_SMURF_SUCCESS,
+  EDIT_SMURF_FAIL
 } from "../actions/index";
 
 const initialState = {

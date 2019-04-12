@@ -15,7 +15,7 @@ export default class SmurfForm extends Component {
     e.preventDefault();
     this.props.addSmurf({
       name: this.state.name,
-      age: this.state.age,
+      age: Number(this.state.age),
       height: this.state.height
     });
     this.setState({
