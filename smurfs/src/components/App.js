@@ -12,7 +12,8 @@ class App extends Component {
     console.log(this.props);
     return (
       <div className="App">
-        <div>
+        <div className="smurf-list-wrapper">
+          <h1> Welcome to the Village</h1>
           <SmurfList
             smurfs={this.props.smurfs}
             deleteSmurf={this.props.deleteSmurf}

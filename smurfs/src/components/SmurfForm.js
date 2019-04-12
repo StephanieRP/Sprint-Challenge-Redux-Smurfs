@@ -23,34 +23,39 @@ export default class SmurfForm extends Component {
       age: "",
       height: ""
     });
+    alert("Your New Smurf Has Successfully been added");
   };
 
   render() {
     return (
-      <form className="smurf-form" onSubmit={this.addNewSmurf}>
-        <input
-          type="text"
-          name="name"
-          value={this.state.name}
-          placeholder="Smurf Name"
-          onChange={this.handleChange}
-        />
-        <input
-          type="number"
-          name="age"
-          value={this.state.age}
-          placeholder="Smurf Age"
-          onChange={this.handleChange}
-        />
-        <input
-          type="text"
-          name="height"
-          value={this.state.height}
-          placeholder="Smurf Height"
-          onChange={this.handleChange}
-        />
-        <button>Submit</button>
-      </form>
+      <div className="form-wrapper">
+        <form className="smurf-form" onSubmit={this.addNewSmurf}>
+          <p> Add Smurf</p>
+
+          <input
+            type="text"
+            name="name"
+            value={this.state.name}
+            placeholder="Smurf Name"
+            onChange={this.handleChange}
+          />
+          <input
+            type="number"
+            name="age"
+            value={this.state.age}
+            placeholder="Smurf Age"
+            onChange={this.handleChange}
+          />
+          <input
+            type="text"
+            name="height"
+            value={this.state.height}
+            placeholder="Smurf Height"
+            onChange={this.handleChange}
+          />
+          <button>Submit</button>
+        </form>
+      </div>
     );
   }
 }

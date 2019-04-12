@@ -2,7 +2,7 @@ import React from "react";
 import Smurf from "./Smurf";
 const SmurfList = props => {
   return (
-    <div>
+    <div className="flex">
       {props.smurfs.map(smurf => {
         return (
           <Smurf

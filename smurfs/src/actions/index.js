@@ -29,7 +29,7 @@ export const getData = () => dispatch => {
 export const addSmurf = newSmurf => dispatch => {
   dispatch({ type: ADD_SMURF_START });
   axios
-    .post("http://localhost:3333/smurfs")
+    .post("http://localhost:3333/smurfs", newSmurf)
     .then(res => {
       // console.log(res);
       dispatch({ type: ADD_SMURF_SUCCESS, payload: res.data });
